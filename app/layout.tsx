@@ -22,9 +22,6 @@ export const metadata = {
   alternates: {
     canonical: "https://kudout.ai",
   },
-  verification: {
-    google: "<meta name="google-site-verification" content="5zaUlHBLK7GixqQHH7znXqdM4KdtIPLn3oFiP2lgCQI" />",
-  },
   openGraph: {
     title: "関西 飲食業DX推進なら駆動体",
     description: "関西の飲食業向けに、データ経営・業績改善を支援するDXパートナー「駆動体」。",
