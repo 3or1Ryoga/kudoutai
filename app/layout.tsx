@@ -4,6 +4,7 @@ import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Metadata } from "next"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -13,9 +14,12 @@ const inter = Inter({ subsets: ["latin"] })
 //     generator: 'v0.dev'
 // }
 
-export const metadata = {
+export const metadata : Metadata = {
   title: "関西 飲食業DX推進なら駆動体 | データ経営・業績改善を支援",
   description: "関西エリアの飲食業界に特化したDX推進支援。経営層の課題に寄り添い、データを駆動力に変える「駆動体」が、売上向上・業務効率化を実現します。",
+  verification: {
+    google: "5zaUlHBLK7GixqQHH7znXqdM4KdtIPLn3oFiP2lgCQI",
+  },
   keywords: ["飲食業DX", "関西DX", "経営改善", "駆動", "データ活用", "2025年問題"],
   generator: 'Next.js',
   metadataBase: new URL("https://kudout.ai"),
