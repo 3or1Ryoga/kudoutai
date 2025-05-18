@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kudoutai.vercel.app/
+
+# Sitemaps
+Sitemap: https://kudoutai.vercel.app/sitemap.xml
