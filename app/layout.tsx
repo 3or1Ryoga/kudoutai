@@ -5,6 +5,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Metadata } from "next"
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -33,7 +34,7 @@ export const metadata : Metadata = {
     siteName: "KUDOUTAI - 駆動体",
     images: [
       {
-        url: "/logo.png", // ロゴのURLに置き換えてください
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "駆動体ロゴ",
@@ -55,7 +56,6 @@ export const metadata : Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -63,8 +63,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning>
+      <GoogleTagManager gtmId="GTM-MWHG92KX" />
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        {/* <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange> */}
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Header />
           {children}
           <Footer />
