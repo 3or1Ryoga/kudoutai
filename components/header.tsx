@@ -13,6 +13,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
+        
           <Image
                   src="/kudoutai-logo2.png?height=400&width=400"
                   alt="データ分析のイメージ"
