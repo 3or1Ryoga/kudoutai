@@ -6,3 +6,5 @@ export default function Home() {
   // redirectがサーバー側で実行されるため、この下のコードは実際には実行されません。
   // return null;
 }
+
+//  bafudibiuba
